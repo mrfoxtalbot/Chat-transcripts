@@ -18,8 +18,12 @@
     padding: 10px;
 }
 
-.hapdash-chat .hapdash-chat-bubble.type-event br {
-    margin: 15px 0;
+.hapdash-chat .hapdash-chat-bubble.type-event p {
+    margin-bottom: 15px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-event p:last-child {
+    margin-bottom: 0;
 }
 
 .chat-MessageToVisitor > a img {
