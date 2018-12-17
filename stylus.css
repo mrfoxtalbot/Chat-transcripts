@@ -1,0 +1,69 @@
+.hapdash-chat-bubble div a {
+    color: white;
+    text-decoration: underline;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.hapdash-chat .hapdash-chat-bubble.type-event a {
+    color: #d3ffff;
+    font-weight: normal;
+}
+.hapdash-chat .hapdash-chat-bubble.type-message.chat-MessageToOperator a {
+    color: #00A9E0;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-event {
+    text-align: left;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-event br {
+    margin: 15px 0;
+}
+
+.chat-MessageToVisitor > a img {
+    right: 0;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message > div {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message.chat-MessageToVisitor > div {
+    margin-left: 150px;
+    margin-right: 55px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message.chat-MessageToOperator > div {
+    margin-left: 55px;
+    margin-right: 150px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message > div::before {
+    bottom: 10px;
+    left: -16px;
+    border: 8px solid #E9EFF3;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-bottom-color: #E9EFF3 !important;
+    border-right-color: #E9EFF3 !important;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message.chat-MessageToVisitor > div::before {
+    left: auto;
+    right: -16px;
+    border: 8px solid #00A9E0 !important;
+    border-top-color: transparent !important;
+    border-left-color: rgb(197, 212, 222);
+    border-bottom-color: rgb(197, 212, 222);
+    border-right-color: transparent !important;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message + .hapdash-chat-meta {
+    margin: 3px 0 0 155px;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-message.chat-MessageToOperator + .hapdash-chat-meta {
+    margin: 3px 0 0 60px;
+}
