@@ -1,0 +1,5 @@
+Adding this JS script and CSS file improves the Happychat transcripts:
+
+- URLs are clickable
+- chat bubbles looks a bit more clear
+- all English-to-English i8n is removed and just shows the message once
