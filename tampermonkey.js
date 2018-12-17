@@ -10,17 +10,15 @@
 // @grant        none
 // ==/UserScript==
 
-
 var $ = window.jQuery;
 
-function createLinks() {
-    $('#transcript .hapdash-chat-bubble div').each(function(){
+function url2links() {
+    $('#transcript .hapdash-chat-bubble div p').each(function(){
         var str = $(this).html();
-        //var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
-        var regex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i;
+        // var regex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i;
+        var regex = /(\b(https?|):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         // Replace plain text links by hyperlinks
         var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
-        // Echo link
         $(this).html(replaced_text);
     });
 }
@@ -37,6 +35,6 @@ function removeEnglishTranslation() {
 }
 
 $(document).ready(function() {
-   createLinks();
+   url2links();
    removeEnglishTranslation()
 });
