@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Happychat Transcript Optimizer
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/senff/Chat-transcripts
 // @version      1.0
 // @description  Makes links clickable, stylizes chat bubbles and removes English-to-English i8n
 // @author       Senff
 // @require      https://code.jquery.com/jquery-1.12.4.js
 // @match        https://mc.a8c.com/support-stats/happychat/*
+// @updateURL    https://raw.githubusercontent.com/senff/Chat-transcripts/master/tampermonkey.js
 // @grant        none
 // ==/UserScript==
+
 
 var $ = window.jQuery;
 
