@@ -31,6 +31,11 @@
     -webkit-transform:rotate(1deg);
     -o-transform:rotate(1deg);
     -moz-transform:rotate(1deg);
+    overflow: hidden;
+}
+
+.hapdash-chat .hapdash-chat-bubble.type-event.HEnote a {
+   color: #000000;
 }
 
 .hapdash-chat .hapdash-chat-bubble.type-event {
