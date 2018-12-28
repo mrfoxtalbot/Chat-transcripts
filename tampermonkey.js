@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Happychat Transcript Optimizer
 // @namespace    https://github.com/senff/Chat-transcripts
-// @version      1.0
-// @description  Makes links clickable, stylizes chat bubbles and removes English-to-English i8n
+// @version      1.1
+// @description  Makes links clickable, stylizes chat bubbles, removes English-to-English i8n and styles user notes
 // @author       Senff
 // @require      https://code.jquery.com/jquery-1.12.4.js
 // @match        https://mc.a8c.com/support-stats/happychat/*
@@ -34,7 +34,18 @@ function removeEnglishTranslation() {
     });
 }
 
+function highlightNotes() {
+    // Highlight all notes written by HE
+    $('.hapdash-chat .hapdash-chat-bubble.type-event.chat-MessageToVisitor').each(function(){
+        var bubbleContents = $(this).find('p').html();
+        if((bubbleContents != "chat transferred") && (bubbleContents != "customer left") && (!bubbleContents.startsWith("operator")) && (!bubbleContents.startsWith("Follow-up ticket"))) {
+            $(this).addClass('HEnote');
+        }
+    });
+}
+
 $(document).ready(function() {
    url2links();
-   removeEnglishTranslation()
+   removeEnglishTranslation();
+   highlightNotes();
 });
