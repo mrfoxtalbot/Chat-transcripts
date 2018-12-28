@@ -12,6 +12,27 @@
     color: #00A9E0;
 }
 
+.hapdash-chat .hapdash-chat-bubble.type-event.HEnote{
+    background: #ffc;
+    border: solid 1px #dda;
+    color: #000000;
+    outline: none;
+    margin: 15px auto;
+    width: 100%;
+    font-size: 15px;
+    max-width: 600px;
+    border-radius: 0;
+    padding: 20px;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1) !important;
+    /* Safari+Chrome */
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7) !important;
+    /* Opera */
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7)  !important;    
+    -webkit-transform:rotate(1deg);
+    -o-transform:rotate(1deg);
+    -moz-transform:rotate(1deg);
+}
+
 .hapdash-chat .hapdash-chat-bubble.type-event {
     text-align: left;
     font-size: 13px;
