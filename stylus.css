@@ -52,6 +52,7 @@
     margin-bottom: 0;
 }
 
+.chat-MessageToVisitor > img,
 .chat-MessageToVisitor > a img {
     right: 0;
 }
